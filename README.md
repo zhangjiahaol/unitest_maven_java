@@ -11,7 +11,11 @@ Usage
 ### build: 
 mvn clean install -Dmaven.test.skip=true
 
-### unittest: 
+### unittest generate report files: 
 mvn clean install org.jacoco:jacoco-maven-plugin:prepare-agent -Dsonar.java.coveragePlugin=jacoco
+
+ls –l ./target/*.exec
+
+ls –l ./target/surefire-reports/*.xml
 
 # sonar_test
