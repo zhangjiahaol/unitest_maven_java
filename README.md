@@ -3,12 +3,11 @@ SonarQube aggregates code coverage by unit tests and integration tests to comput
 
 Prerequisites
 =============
-* [SonarQube](http://www.sonarqube.org/downloads/) 5.6+
 * Maven 3+
 
 Usage
 =====
-* Build the project, execute all the tests and analyze the project with SonarQube Scanner for Maven:
+build: mvn clean install -Dmaven.test.skip=true
+unittest: mvn clean install org.jacoco:jacoco-maven-plugin:prepare-agent -Dsonar.java.coveragePlugin=jacoco
 
-        mvn clean install sonar:sonar
 # sonar_test
