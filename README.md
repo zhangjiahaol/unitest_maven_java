@@ -8,9 +8,6 @@ Prerequisites
 Usage
 =====
 
-### build: 
-mvn clean install -Dmaven.test.skip=true
-
 ### unittest generate report files: 
 mvn clean install org.jacoco:jacoco-maven-plugin:prepare-agent -Dsonar.java.coveragePlugin=jacoco
 
